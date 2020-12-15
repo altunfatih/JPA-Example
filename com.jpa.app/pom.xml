@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jpa-egitimi</groupId>
+  <artifactId>10-com.jpa</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+    <build>
+  	<plugins>
+  		<plugin>
+  		  	<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>3.1</version>
+  			<configuration>
+  				<source>1.8</source>
+  				<target>1.8</target>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+  
+   <properties>
+  	<mysql.version>8.0.21</mysql.version>
+  	<hibernate.version>5.4.10.Final</hibernate.version>
+  	<hibernate.C3P0.version>5.4.2.Final</hibernate.C3P0.version>
+  </properties>
+  
+  	<dependencies>
+  	
+  		 <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+  		<dependency>
+	    	<groupId>mysql</groupId>
+	    	<artifactId>mysql-connector-java</artifactId>
+	    	<version>${mysql.version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>${hibernate.version}</version>
+		</dependency>
+		
+  		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-entitymanager</artifactId>
+		    <version>${hibernate.version}</version>
+		</dependency>
+		  	
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-c3p0</artifactId>
+		    <version>${hibernate.C3P0.version}</version>
+		</dependency>
+		  	
+  	</dependencies>	
+  
+</project>
